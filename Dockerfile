@@ -11,7 +11,7 @@ RUN apt-get update && \
     apt-get install -y curl unzip zip inotify-tools && \
     rm -rf /var/lib/apt/lists/*
 
-RUN curl -L -o /tmp/glassFish-4.1.zip http://download.java.net/glassFish/4.1/release/glassfish-4.1.zip && \
+RUN curl -L -o /tmp/glassfish-4.1.zip http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip && \
     unzip /tmp/glassfish-4.1.zip -d /usr/local && \
     rm -f /twp/glassfish-4.1.zip
 
