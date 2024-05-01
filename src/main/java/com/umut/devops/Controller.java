@@ -10,7 +10,7 @@ public class Controller {
 
     @GetMapping("/getProjeBilgileri")
     public String getProjeBilgileri(){
-        return "Commit: Spring boot github jenkins ve docker baglantisi\n";
+        return "Glass: Spring boot github jenkins ve docker baglantisi\n";
     }
 
 
