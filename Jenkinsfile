@@ -24,7 +24,7 @@ pipeline{
         stage('Push image to hub'){
             steps{
                 script{
-                    docker.image("devops:${env.BUILD_NUMBER}").run("-d -p 8989:8989 --name devops")
+                    docker.image("devops:${env.BUILD_NUMBER}").run("-d -p 8081:8081 --name devops")
                 }
             }
         }
