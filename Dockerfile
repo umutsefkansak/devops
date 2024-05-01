@@ -2,7 +2,7 @@ FROM openjdk:21
 ADD target/devops.jar devops.jar
 ENTRYPOINT ["java","-jar","/devops.jar"]
 
-
+FROM ubuntu:latest
 ENV JAVA_HOME /usr/lib/jvm/Java-8-openjdk-amd64
 ENV GLASSFISH_HOME /usr/local /glassFish4
 ENV PATH            $PATH: $JAVA_HOME/bin: $GLASSFISH_HOME/bin
