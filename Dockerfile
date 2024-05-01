@@ -4,5 +4,5 @@ ENTRYPOINT ["java","-jar","/devops.jar"]
 
 FROM httpd:latest
 EXPOSE 80
-COPY ./public-html/ /usr/local/apache2/htdocs/
+COPY ./src/ /usr/local/apache2/htdocs/
 
